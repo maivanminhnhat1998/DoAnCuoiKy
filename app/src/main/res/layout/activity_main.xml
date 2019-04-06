@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="#0f3b52"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:paddingLeft="15dp"
+        android:drawablePadding="15dp"
+        android:drawableLeft="@drawable/ic_supervisor_account_black_24dp"
+        android:background="@drawable/edt_roud"
+        android:id="@+id/edtName"
+        android:layout_width="350dp"
+        android:layout_height="45dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="150dp"
+        android:hint="Enter name"/>
+    <EditText
+        android:background="@drawable/edt_roud"
+        android:id="@+id/edtPass"
+        android:layout_width="350dp"
+        android:layout_height="45dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:hint="Enter password"
+        android:drawablePadding="15dp"
+        android:paddingLeft="15dp"
+        android:drawableLeft="@drawable/ic_lock_black_24dp"
+        android:inputType="textPassword"
+        android:layout_below="@+id/edtName"/>
+    <CheckBox
+        android:layout_centerHorizontal="true"
+        android:id="@+id/saveLoginCheckBox"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:text="Remember me"
+        android:layout_marginTop="350dp"
+        android:textColor="#FFF" />
+    <Button
+        android:background="@drawable/edt_roud"
+        android:layout_marginTop="150dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/edtPass"
+        android:id="@+id/btnSubmit"
+        android:layout_width="350dp"
+        android:layout_height="40dp"
+        android:text="@string/Submit"/>
+
+</RelativeLayout>
